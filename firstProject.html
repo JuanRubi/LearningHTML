@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./styleFirst.css">
+	<title>	My Website</title>
+</head>
+<body>
+
+	<h1 id="title">Juan's Website</h1>
+
+	<p class="para-text">This is going to be my first website using the HTML and CSS that I have learn. It will also include new things that I will learn and want to apply to see what they do.</p>
+
+	<h2 class="subtitle" id="about-me">About Me</h2>
+
+	<img src="./Pictures/space - Copy.jpg" id="space-image">
+
+	<p class="para-text">This is an artist rendition of space. I find it enjoying to take a moment to look into space and wonder what else might be out there. Though we may not live long enough to explore space itself, its mysteries can still keep us entertain enough to make it possible for others one day. As David Hilbert once said, "We must know. We will know." 
+	<br/><br/>
+	<span class="italics">Other interests include:</span>
+		<ul>
+			<li class="list-item">Mathematics</li>
+			<li class="list-item">Software Engineering</li>
+			<li class="list-item">Physics</li>
+		</ul>
+	</p>
+
+	<h2 class="subtitle">Services</h2>
+
+	<a href="https://www.google.com" class="link">Google</a>
+	<br/>
+
+	<!-- This will be changed later. -->
+	<table border="1" class="table1"> 
+		<thead>
+			<tr>
+				<td>Math</td>
+				<td>Physics</td>
+				<td>Rocket League</td>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Gauss</td>
+				<td>Einstein</td>
+				<td>Kaydop</td>
+			</tr>
+			<tr>
+				<td>Euler</td>
+				<td>Feynman</td>
+				<td>Kuxir97</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<br/><br/>
+
+	<div id="service-image"></div>
+	<div id="service-image2"></div>
+	<br/><br/>
+
+	<div class="container">	<!-- flex-grow changes the size of the items and resize to screen, default = 0. -->
+							<!-- flex-shrink changes rate of shrinkage, default = 1. -->
+		<div class="container-item" style="order: 4;
+		flex-grow: 1 1 100px;
+		align-self: flex-end;
+		">A</div>			
+		<div class="container-item" style="order: 3;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 100px;
+		">B</div>
+		<div class="container-item" style="order: 5;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 100px;
+		">C</div>
+		<div class="container-item" style="order: 1;
+		flex-grow: 1 1 100px;
+		align-self: flex-start;
+		">D</div>
+		<div class="container-item" style="order: 2;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 100px;
+		">E</div>
+		<div class="container-item" style="order: 6;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 100px;
+		">F</div>
+		<div class="container-item" style="order: 7;
+		flex-grow: 1 1 100px;
+		align-self: flex-start;
+		">G</div>			<!-- flex: grow shrink basis (one line notation). -->
+	</div>
+
+	<!---------------		CREATING A GRID 		------------------->
+	<div class="grid-container">
+		<div class="grid-item" style="order: 1;
+		background: rgb(255, 150, 150);
+		grid-column: 1 / span 3;
+		grid-row: 2 / span 2;
+		grid-area: 2 / 1 / span 2 / span 3;  
+		">1</div>								<!-- gird-area: rowStart/ colStart/ rowEnd/ colEnd; -->	
+		<div class="grid-item" style="order: 2;
+		background: rgb(170, 255, 70);
+		">2</div>
+		<div class="grid-item" style="order: 3;
+		background: rgb(222, 132, 255);
+		">3</div>
+		<div class="grid-item" style="order: 4;
+		background: rgb(255, 207, 119);
+		">4</div>
+		<div class="grid-item" style="order: 5;
+		background: rgb(140, 210, 255);	
+		">5</div>
+		<div class="grid-item" style="order: 5;
+		background: rgb(0, 160, 160);	
+		">6</div>
+	</div>
+
+	<br/><br/>
+
+	<div id="gauss-image"></div>
+
+	<h2 id="contact-us">Contact Me</h2>
+
+	<form>
+		<input type="text" placeholder="Full Name" class="form-input">
+		<input type="email" placeholder="Email" class="form-input">
+		<textarea></textarea>
+		<button class="submit-button">Submit</button>
+	</form>
+	
+</body>
+</html>
